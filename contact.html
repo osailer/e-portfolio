@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="assets/style.css"/>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -10,7 +9,7 @@
 </head>
 <body>
   <header>
-    <img src="assets/profile.jpg" alt="Profile Image" class="profile-img"/>
+    <img src="assets/images/dog.jpeg" alt="Profile Image" class="profile-img"/>
     <h1>Contact</h1>
     <p>I'd love to hear from you</p>
   </header>
@@ -22,32 +21,30 @@
     <a href="contact.html" class="active">Contact</a>
   </nav>
   <main>
-    <section>
-      <h2 class="section-title">Contact Form</h2>
-      <form action="mailto:your@email.com" method="POST" enctype="text/plain">
-        <label>Name:</label>
-        <input type="text" name="name" required/>
-        <br/>
-        <label>Email:</label>
-        <input type="email" name="email" required/>
-        <br/>
-        <label>Message:</label>
-        <textarea name="message" required></textarea>
-        <br/>
-        <button type="submit" class="btn">Send</button>
+    <section style="max-width: 420px; margin: 0 auto; box-shadow: var(--shadow); background: var(--contrast); border-radius: 9px; padding: 2rem 1.4rem;">
+      <h2 class="section-title" style="text-align:center;">Contact Form</h2>
+      <form action="mailto:your@email.com" method="POST" enctype="text/plain" style="display: flex; flex-direction: column; gap: 1rem;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required style="padding: 0.6em; border-radius: 4px; border: 1px solid #ccc;"/>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required style="padding: 0.6em; border-radius: 4px; border: 1px solid #ccc;"/>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required rows="5" style="padding: 0.6em; border-radius: 4px; border: 1px solid #ccc;"></textarea>
+        
+        <button type="submit" class="btn" style="margin-top: 0.6em;">Send</button>
       </form>
-      <p style="margin-top: 1rem; font-size: 0.95em;">Or email me directly: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p style="margin-top: 1rem; font-size: 0.95em; text-align:center;">Or email me directly: <a href="mailto:osailer13@gmail.com">osailer13@gmail.com</a></p>
     </section>
-    <section>
-      <h2 class="section-title">Social</h2>
-      <p>
-        <a href="https://github.com/osailer" target="_blank" class="btn">GitHub</a> &nbsp; 
-        <a href="#" target="_blank" class="btn">LinkedIn (add link)</a>
-      </p>
+    <section style="max-width: 420px; margin: 2rem auto;background:var(--contrast);padding:1.3rem 1rem;border-radius:9px;box-shadow:var(--shadow);text-align:center;">
+      <h2 class="section-title">Socials</h2>
+      <a href="https://github.com/osailer" target="_blank" class="btn" style="margin:0.3em;">GitHub</a>
+      <a href="https://www.linkedin.com/in/owen-sailer-720321298/" target="_blank" class="btn" style="margin:0.3em;">LinkedIn</a>
     </section>
   </main>
   <footer>
-    &copy; 2025 [Your Name]. All rights reserved.
+    &copy; 2025 Owen Sailer. All rights reserved.
   </footer>
 </body>
 </html>
