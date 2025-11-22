@@ -1,54 +1,82 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="assets/style.css"/>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | My E-Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Owen Sailer</title>
+  <link rel="stylesheet" href="assets/style.css" />
   <script src="assets/scripts.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <img src="assets/images/dog.jpeg" alt="Profile Image" class="profile-img"/>
-    <h1>Projects</h1>
-    <p>Featuring my top work in tech</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="assets/images/dog.jpeg" alt="Owen Sailer — profile photo" class="profile-img" />
+      <div class="headline">
+        <h1>Projects</h1>
+        <p class="sub">Showcasing my development work & real-world experience</p>
+      </div>
+    </div>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="resume.html">Resume</a>
-    <a href="projects.html" class="active">Projects</a>
-    <a href="contact.html">Contact</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="contact.html" class="nav-link">Contact</a>
   </nav>
-  <main>
-    <section>
-      <h2 class="section-title">Highlighted Projects</h2>
-      <ul>
-        <li>
-          <strong>Smart Portfolio Website</strong><br>
-          Fully responsive portfolio website built with HTML, CSS & JavaScript.<br>
-          <a href="https://github.com/osailer/e-portfolio" target="_blank">Github Repo</a>
-        </li>
-        <li>
-          <strong>Todo App (React)</strong><br>
-          Productivity web app with modern UI, task management, and persistent storage.<br>
-          <a href="https://github.com/osailer/todo-app" target="_blank">Github Repo</a>
-        </li>
-        <li>
-          <strong>RESTful API (Node.js)</strong><br>
-          API backend for managing users and tasks.<br>
-          <a href="#" target="_blank">Github Repo</a>
-        </li>
-      </ul>
+
+  <main class="container projects-container">
+
+    <!-- Top Section -->
+    <section class="projects-top">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="lead-text">A collection of technical projects highlighting my skills in web development, software engineering, and backend systems.</p>
     </section>
+
+    <!-- Project Cards Grid -->
     <section>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3>Smart Portfolio Website</h3>
+          <p>Responsive portfolio built using HTML, CSS, and vanilla JavaScript with optimized layouts and UI enhancements.</p>
+          <a href="https://github.com/osailer/e-portfolio" target="_blank" rel="noopener" class="project-btn">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Todo App (React)</h3>
+          <p>Full-featured React Task Manager with clean architecture, local storage, reusable components, and UI animations.</p>
+          <a href="https://github.com/osailer/todo-app" target="_blank" rel="noopener" class="project-btn">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>RESTful API (Node.js)</h3>
+          <p>Node.js/Express backend for user accounts and tasks with authentication-ready endpoints and modular routing.</p>
+          <a href="#" class="project-btn disabled">Repo coming soon</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Unix Multithreaded File Parser</h3>
+          <p>Linux/Pthreads project for reading, processing, and combining large file blocks using thread-safe synchronization.</p>
+          <a href="#" class="project-btn disabled">Repo coming soon</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section class="more-projects">
       <h2 class="section-title">More Projects</h2>
-      <p>See my <a href="https://github.com/osailer?tab=repositories" target="_blank">GitHub profile</a> for more public work and open source contributions.</p>
+      <p>Visit my GitHub profile for complete repositories, contributions, and ongoing work.</p>
+      <a href="https://github.com/osailer?tab=repositories" target="_blank" class="github-btn">Open GitHub Profile</a>
     </section>
+
   </main>
-  <footer>
-    &copy; 2025 Owen Sailer. All rights reserved.
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Owen Sailer.</p>
   </footer>
 </body>
 </html>

@@ -1,50 +1,58 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="assets/style.css"/>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me | My E-Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Owen Sailer</title>
+  <link rel="stylesheet" href="assets/style.css" />
   <script src="assets/scripts.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="assets/images/dog.jpeg" alt="Profile Image" class="profile-img"/>
-    <h1>About Me</h1>
-    <p>Get to know who I am and my skills</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="assets/images/dog.jpeg" alt="Owen Sailer — profile photo" class="profile-img" />
+      <div class="headline">
+        <h1>About Me</h1>
+        <p class="sub">Technology enthusiast focused on helping others</p>
+      </div>
+    </div>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="resume.html">Resume</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="resume.html" class="nav-link">Resume</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="contact.html" class="nav-link">Contact</a>
   </nav>
-  <main>
+
+  <main class="container">
     <section>
       <h2 class="section-title">Bio</h2>
       <p>
-        [Your Name] — Technology enthusiast specialized in software development, web applications, and digital innovation.
-        Driven by curiosity, I love learning new skills and collaborating on impactful projects.
+        Owen Sailer — I'm a junior computer science student at North Dakota State University. I enjoy building
+        user-focused web apps, studying software architecture, and contributing to open source.
       </p>
     </section>
+
     <section>
       <h2 class="section-title">Skills</h2>
-      <ul>
-        <li>Front-end: HTML, CSS, JavaScript, React</li>
-        <li>Back-end: Node.js, Express, Python</li>
-        <li>Tools: Git, VS Code, Figma</li>
-        <li>Other: Communication, Project Management, UX/UI Design</li>
+      <ul class="skill-list">
+        <li><strong>Front-end:</strong> HTML, CSS, JavaScript, React</li>
+        <li><strong>Back-end:</strong> Node.js, Express, Python</li>
+        <li><strong>Tools:</strong> Git, VS Code, Figma</li>
+        <li><strong>Other:</strong> UX, teamwork, project management</li>
       </ul>
     </section>
+
     <section>
-      <h2 class="section-title">Personal Interests</h2>
-      <p>Open source, web design, AI/ML, hiking, photography.</p>
+      <h2 class="section-title">Goals</h2>
+      <p>Open source, web design, AI/ML, hiking, and photography.</p>
     </section>
   </main>
-  <footer>
-    &copy; 2025 Owen Sailer. All rights reserved.
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Owen Sailer.</p>
   </footer>
 </body>
 </html>
