@@ -15,7 +15,7 @@
 
 
 /* Reset-ish */
-html, body {
+html {
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
@@ -27,26 +27,22 @@ html, body {
 body {
   margin: 0;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  color: var(--primary, #fff);
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-
-  /* Background image settings */
-  background: url("assets/images/circut.jpeg") center/cover no-repeat fixed;
+  color: var(--primary);
+  background: url("assets/images/circut.jpeg") center/100% 100% no-repeat fixed;
   position: relative;
 }
 
-/* Purple overlay using a pseudo-element */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(111, 67, 206, 0.45); /* purple tint, adjust opacity */
-  z-index: -1; /* keeps overlay behind all content */
+  inset: 0;
+  background: rgba(111, 67, 206, 0.45);
   pointer-events: none;
+  z-index: -1;
+}
+
+main {
+  background: none;
 }
 
 
@@ -137,6 +133,28 @@ section {
 
 /* Resume viewer */
 .document-viewer{background:var(--contrast); border-radius:8px; padding:0.5rem; box-shadow:var(--shadow)}
+
+/* Tinted background helper
+   Add `tinted-bg` to any block-level element and set a background image
+   (either via inline `style="background-image: url(...)"` or in a stylesheet).
+   The pseudo-element places a purple tint over the image without affecting
+   foreground content (which should be placed in an inner element). */
+.tinted-bg{
+  position:relative;
+  background-size:cover;
+  background-position:center;
+  border-radius:14px;
+  overflow:hidden;
+}
+.tinted-bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(111,67,206,0.45); /* purple tint */
+  pointer-events:none;
+  mix-blend-mode: overlay; /* try 'multiply' or 'soft-light' if you prefer */
+}
+.tinted-bg > *{ position:relative; z-index:1; }
 
 /* Forms */
 .contact-form{display:flex; flex-direction:column; gap:0.6rem; background:var(--contrast); padding:1rem; border-radius:8px;}
