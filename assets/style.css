@@ -28,7 +28,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--primary);
-  background: url("assets/images/circut.jpeg") center/100% 100% no-repeat fixed;
+  background: url("assets/images/circut.png") center/100% 100% no-repeat fixed;
   position: relative;
 }
 
@@ -401,4 +401,34 @@ section {
 }
 .github-btn:hover {
   background: #333;
+}
+
+/* Project Page Image Formatting */
+.project-image {
+  width: 100%;
+  max-width: 700px;    /* prevents images from getting too large */
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+}
+
+/* Grid layout for multiple images */
+.project-detail-card img {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .project-detail-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .project-detail-card h2,
+  .project-detail-card p,
+  .project-detail-card a {
+    grid-column: 1 / -1; /* pushes text below the two images */
+  }
 }
