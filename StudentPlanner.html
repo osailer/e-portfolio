@@ -1,58 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Student Planner — Project | Owen Sailer</title>
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Planner — Project | Owen Sailer</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <img src="assets/images/dog.jpeg" alt="Profile photo" class="profile-img" />
-      <div class="headline">
-        <h1>Student Planner Application</h1>
-        <p class="sub">Task & schedule management app for students</p>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <img
+          src="assets/images/dog.jpeg"
+          alt="Owen Sailer profile photo"
+          class="profile-img"
+        />
+        <div class="headline">
+          <h1>Student Planner Application</h1>
+          <p class="sub">Task & schedule management app for students</p>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="site-nav">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="resume.html" class="nav-link">Resume</a>
-    <a href="projects.html" class="nav-link active">Projects</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
 
-  <main class="container project-page">
+    <!-- Main Content -->
+    <main class="container project-page">
+      <section class="resume-header-card">
+        <h2 class="section-title">About This Project</h2>
 
-    <section class="project-detail-card">
-      <img src="assets/images/StudentPlannerMonth.png" alt="Student Planner Screenshot" class="project-image" />
-      <img src="assets/images/StudentPlannerWeek.png" alt="Student Planner Screenshot" class="project-image" />
+        <p>
+          For <strong>CSCI Modern Software Development</strong>, I collaborated
+          with <strong>McKeon Honeyman and Jared Klevgard</strong> to create the
+          Student Planner, a web application designed to help students organize
+          their day-to-day lives.
+        </p>
 
+        <p>
+          Built with <strong>HTML, CSS, and vanilla JavaScript</strong>, the app
+          allows users to add and edit tasks within their planner. It provides
+          daily, weekly, and monthly calendar views for easy reading. We also
+          focused on simplicity and reliability to make task management easier
+          for students.
+        </p>
+        <img
+          src="assets/images/StudentPlannerMonth.png"
+          alt="Student Planner Month View"
+          class="project-image"
+        />
+        <img
+          src="assets/images/StudentPlannerWeek.png"
+          alt="Student Planner Week View"
+          class="project-image"
+        />
 
-      <h2 class="section-title">About This Project</h2>
-      <p>
-        The Student Planner is a lightweight web application designed to help students
-        organize assignments, track deadlines, and manage schedules. Built with
-        **HTML, CSS, and vanilla JavaScript**, it provides dynamic task creation,
-        editing, and completion features, all within a clean user interface.
-      </p>
+        <!-- Back & GitHub Buttons -->
+        <div
+          class="project-btn-wrapper"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+          "
+        >
+          <a href="projects.html" class="btn resume-btn">← Back to Projects</a>
+          <a
+            href="https://github.com/osailer/Student_Planner"
+            target="_blank"
+            class="btn resume-btn"
+            >View on GitHub →</a
+          >
+        </div>
+      </section>
+    </main>
 
-      <p>
-        This project strengthened my skills in DOM manipulation, event handling,
-        and creating responsive layouts without relying on frameworks.
-      </p>
-
-      <a href="projects.html" class="project-btn">← Back to Projects</a>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Owen Sailer</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Owen Sailer</p>
+    </footer>
+  </body>
 </html>

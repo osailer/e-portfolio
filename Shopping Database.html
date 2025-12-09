@@ -1,56 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shopping Database — Project | Owen Sailer</title>
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopping Database — Project | Owen Sailer</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <img src="assets/images/dog.jpeg" alt="Profile photo" class="profile-img" />
-      <div class="headline">
-        <h1>Online Shopping Database</h1>
-        <p class="sub">A full backend system for ecommerce data</p>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <img
+          src="assets/images/dog.jpeg"
+          alt="Owen Sailer profile photo"
+          class="profile-img"
+        />
+        <div class="headline">
+          <h1>Online Shopping Database</h1>
+          <p class="sub">A full backend system for ecommerce data</p>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="site-nav">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="resume.html" class="nav-link">Resume</a>
-    <a href="projects.html" class="nav-link active">Projects</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
 
-  <main class="container project-page">
+    <!-- Main Content -->
+    <main class="container project-page">
+      <section class="resume-header-card">
+        <h2 class="section-title">About This Project</h2>
 
-    <section class="project-detail-card">
-      <img src="assets/images/OnlineShopping.png" alt="Shopping Database Screenshot" class="project-image" />
-      <img src="assets/images/OnlineShoppingCrowsFoot.png" alt="Shopping Database Screenshot" class="project-image" />
+        <p>
+          In <strong>CSCI Database Systems</strong>, I collaborated with
+          <strong>Karsten Larson, Kaitlyn Nickel, and Patrick Arbach</strong> to
+          develop a backend system for an online shopping platform. The goal was
+          to manage products, customers, orders, and inventory while practicing
+          relational database design with <strong>PostgreSQL and Java</strong>.
+        </p>
 
-      <h2 class="section-title">About This Project</h2>
-      <p>
-        This project involved designing and implementing a backend database system
-        for an online shopping platform. The system manages product data, orders,
-        customers, and inventory using **SQL, Java, and PostgreSQL**.
-      </p>
+        <p>
+          My contributions included designing the database, implementing backend
+          logic in Java, and writing optimized SQL queries. This project taught
+          us how to manage data relationships and ensure the system could handle
+          ecommerce scenarios efficiently.
+        </p>
 
-      <p>
-        I contributed to schema design, backend logic, and data retrieval operations,
-        while focusing on relational modeling and SQL query optimization.
-      </p>
+        <img
+          src="assets/images/OnlineShopping.png"
+          alt="Shopping Database Screenshot"
+          class="project-image"
+        />
+        <img
+          src="assets/images/OnlineShoppingCrowsFoot.png"
+          alt="Shopping Database ER Diagram"
+          class="project-image"
+        />
 
-      <a href="projects.html" class="project-btn">← Back to Projects</a>
-    </section>
+        <!-- Back & GitHub Buttons -->
+        <div
+          class="project-btn-wrapper"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+          "
+        >
+          <a href="projects.html" class="btn resume-btn">← Back to Projects</a>
+          <a
+            href="https://github.com/Karsten-Larson/Online-Store"
+            target="_blank"
+            class="btn resume-btn"
+            >View on GitHub →</a
+          >
+        </div>
+      </section>
+    </main>
 
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Owen Sailer</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Owen Sailer</p>
+    </footer>
+  </body>
 </html>

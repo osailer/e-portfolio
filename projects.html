@@ -1,76 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects — Owen Sailer</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <script src="assets/scripts.js" defer></script>
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <img src="assets/images/dog.jpeg" alt="Owen Sailer — profile photo" class="profile-img" />
-      <div class="headline">
-        <h1>Projects</h1>
-        <p class="sub">Showcasing my development work & real-world experience</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Owen Sailer</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <img
+          src="assets/images/dog.jpeg"
+          alt="Owen Sailer profile photo"
+          class="profile-img"
+        />
+        <div class="headline">
+          <h1>Projects</h1>
+          <p class="sub">
+            Showcasing my development work & real-world experience
+          </p>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="resume.html" class="nav-link">Resume</a>
-    <a href="projects.html" class="nav-link active">Projects</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
 
-  <main class="container">
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Top Section -->
+      <section class="resume-header-card">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="lead-text">
+          A collection of technical projects highlighting my skills in web
+          development, software engineering, and backend systems.
+        </p>
+      </section>
 
-    <!-- Top Section -->
-    <section class="resume-header-card">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="lead-text">A collection of technical projects highlighting my skills in web development, software engineering, and backend systems.</p>
-    </section>
+      <!-- Project Cards Grid -->
+      <section class="resume-header-card">
+        <h2 class="section-title">Click to View My Projects</h2>
+        <div class="gs-grid project-grid">
+          <a href="StudentPlanner.html" class="gs-card project-card">
+            <h3>Student Planner Application</h3>
+            <p>
+              A web app designed to help students manage schedules and track
+              assignments. Built with HTML, CSS, and JavaScript, it features a
+              complete and interactive user interface.
+            </p>
+          </a>
 
-    <!-- Project Cards Grid -->
-    <section>
-      <div class="project-grid">
+          <a href="Shopping Database.html" class="gs-card project-card">
+            <h3>Online Shopping Database</h3>
+            <p>
+              Developed a backend system for managing ecommerce data, including
+              products, orders, and users. Implemented using Java, SQL, and
+              PostgreSQL with full CRUD functionality.
+            </p>
+          </a>
 
-        <article class="project-card">
-          <h3>Student Planner Application</h3>
-          <p>The Student Planner is an a app that allows students to manage their schedules and to organzie their class work. It was built using HTML, CSS, and vanilla JavaScript, with full UI.</p>
-          <a href="StudentPlanner.html" class="project-btn">View Project</a>
-        </article>
+          <a href="AdoptionCenter.html" class="gs-card project-card">
+            <h3>Adoption Center Webpage</h3>
+            <p>
+              Built a website for animal shelters to post pets available for
+              adoption. Features role-based admin access and a full database
+              powered by Microsoft SQL Server.
+            </p>
+          </a>
+        </div>
+      </section>
 
-        <article class="project-card">
-          <h3>Online Shopping Database</h3>
-          <p>Class project to create a backend system for managing shopping data for an ecommerce site. Built using SQL, Java, and Postgree.</p>
-          <a href="Shopping Database.html" class="project-btn">View Project</a>
-        </article>
+      <!-- GitHub Section -->
+      <section class="resume-header-card">
+        <h2 class="section-title">More Projects</h2>
+        <p>
+          Visit my GitHub profile for complete repositories, contributions, and
+          ongoing work.
+        </p>
+        <a
+          href="https://github.com/osailer?tab=repositories"
+          target="_blank"
+          class="btn resume-btn"
+          >Open GitHub Profile</a
+        >
+      </section>
+    </main>
 
-        <article class="project-card">
-          <h3>Adoption Center Webpage</h3>
-          <p>Created a webpage for class to allow shelter to post animals online for adoption. Created different admin levels for types of users, and a full database using MicrosoftSQL.</p>
-        <a href="AdoptionCenter.html" class="project-btn">View Project</a>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- GitHub Section -->
-    <section class="more-projects">
-      <h2 class="section-title">More Projects</h2>
-      <p>Visit my GitHub profile for complete repositories, contributions, and ongoing work.</p>
-      <a href="https://github.com/osailer?tab=repositories" target="_blank" class="project-btn">Open GitHub Profile</a>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Owen Sailer</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Owen Sailer</p>
+    </footer>
+  </body>
 </html>

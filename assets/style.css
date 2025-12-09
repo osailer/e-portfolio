@@ -1,8 +1,8 @@
 /* Core variables */
 :root{
   --primary: #1f283b;
-  --accent: #6f43ce;
-  --accent-light: #b993fd;
+  --accent: #5146e5;
+  --accent-light: #776fe7;
   --background: #f7f8fc;
   --nav-bg: #22304a;
   --contrast: #ffffff;
@@ -15,6 +15,13 @@
 
 
 /* Reset-ish */
+html, body {
+  height: 100%;
+  margin: 0;
+  flex-direction: column;}
+
+  
+
 html {
   height: 100%;
   margin: 0;
@@ -36,7 +43,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(111, 67, 206, 0.45);
+  background: linear-gradient(180deg, var(--primary) 50%, var(--accent) 100%);
   pointer-events: none;
   z-index: -1;
 }
@@ -49,7 +56,7 @@ main {
 
 /* Header */
 .site-header{
-  background: linear-gradient(90deg, var(--nav-bg) 50%, var(--accent) 100%);
+  background: linear-gradient(170deg, var(--primary) 50%, var(--accent) 100%);
   color:var(--contrast);
   padding:1.6rem 0;
   box-shadow:var(--shadow);
@@ -111,7 +118,7 @@ section {
 }
 
 /* Sections/cards */
-.section-title{color:var(--accent); margin-bottom:0.6rem}
+.section-title{color:(#5146e5);; margin-bottom:0.6rem}
 .section-title + p{margin-top:0}
 .cards{
   display:grid;
@@ -183,12 +190,11 @@ section {
 .btn:hover{background:var(--accent-light); color:var(--primary)}
 
 /* Footer */
-.site-footer{
-  background:var(--nav-bg);
-  color:var(--contrast);
-  padding:1rem 0;
-  text-align:center;
-  margin-top:2rem;
+.site-footer {
+  background: var(--nav-bg);
+  color: var(--contrast);
+  padding: 1rem 0;
+  text-align: center;
 }
 
 /* Responsive tweaks */
@@ -206,39 +212,17 @@ section {
 
 .gs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns */
   gap: 1.5rem;
   margin-top: 1.2rem;
 }
 
-.gs-card {
-  display: block;
-  padding: 1.8rem;
-  border-radius: 14px;
-  background: #ffffff;
-  border: 1px solid #eee;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  text-decoration: none;
-  transition: .2s ease;
-  border:3px solid var(--accent-light);
-
-}
-
-.gs-card h3 {
-  margin-bottom: .4rem;
-  color: #333;
-}
-
-.gs-card p {
-  color: #666;
-  font-size: .95rem;
-  
-}
-
-.gs-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-  border-color: #d6d6ff;
+@media (max-width: 720px) {
+  .gs-grid {
+    grid-template-columns: 1fr;
+    /* single column on small screens */
+  }
 }
 
 /* Resume page upgrades */
@@ -261,7 +245,7 @@ section {
 .resume-header-card h2 {
   margin-bottom: .4rem;
   font-size: 2rem;
-  color:#6f43ce;
+  color:#5146e5;
 }
 
 .resume-header-card p {
@@ -404,13 +388,17 @@ section {
 }
 
 /* Project Page Image Formatting */
+/* Project Page Image Formatting */
 .project-image {
   width: 100%;
-  max-width: 700px;    /* prevents images from getting too large */
+  max-width: 900px;
+  /* increased max width */
   height: auto;
   display: block;
-  margin: 1.5rem auto;
-  border-radius: 12px;
+  margin: 2rem auto;
+  /* more spacing above/below */
+  border-radius: 14px;
+  /* slightly larger radius for aesthetics */
 }
 
 /* Grid layout for multiple images */
@@ -420,15 +408,95 @@ section {
 
 @media (min-width: 900px) {
   .project-detail-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    align-items: start;
-  }
+      background: #fff;
+      padding: 2.5rem;
+      /* increased from 1.8rem */
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      border: 1px solid #eee;
+      transition: .25s ease;
+    }
 
   .project-detail-card h2,
   .project-detail-card p,
   .project-detail-card a {
     grid-column: 1 / -1; /* pushes text below the two images */
   }
+}
+/* Full card behaves like a button */
+.project-card {
+  display: center;
+  flex-direction: column;
+  justify-content: space-between;
+  /* spaces content nicely */
+  background: linear-gradient(135deg, #6c63ff, #5146e5);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  /* same as resume-btn */
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Card content */
+.project-card h3,
+.project-card p {
+  margin: 0 0 1rem 0;
+  color: #fff;
+}
+
+/* Hover effect like .btn */
+.project-card:hover {
+  transform: translateY(-3px);
+  /* subtle lift */
+  background: linear-gradient(135deg, #5146e5, #6c63ff);
+  /* gradient swap */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Optional: smooth transition for all text changes */
+.project-card h3,
+.project-card p {
+  transition: color 0.25s ease;
+}
+
+/* Project grid spacing */
+.project-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 1.5rem;
+}
+
+/* Get Started Cards like full buttons */
+.get-started .gs-card {
+  display: block;
+  padding: 2rem;
+  border-radius: 30px;
+  /* match .resume-btn rounded style */
+  background: linear-gradient(135deg, #6c63ff, #5146e5);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: .2s ease-in-out;
+  text-align: center;
+}
+
+.get-started .gs-card h3 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.get-started .gs-card p {
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+.get-started .gs-card:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }

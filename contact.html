@@ -1,76 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Owen Sailer</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Owen Sailer</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/scripts.js" defer></script>
+  </head>
 
-  <link rel="stylesheet" href="assets/style.css" />
-  <script src="assets/scripts.js" defer></script>
-</head>
-
-<body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <img
-        src="assets/images/dog.jpeg"
-        alt="Owen Sailer — profile photo"
-        class="profile-img"
-      />
-
-      <div class="headline">
-        <h1>Contact</h1>
-        <p class="sub">I'd love to hear from you</p>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <img
+          src="assets/images/dog.jpeg"
+          alt="Photo of Owen Sailer"
+          class="profile-img"
+        />
+        <div class="headline">
+          <h1>Contact</h1>
+          <p class="sub">I'd love to hear from you</p>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Navigation -->
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="resume.html" class="nav-link">Resume</a>
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
 
-  <!-- Main Content -->
-  <main class="container">
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Contact Form Section -->
+      <section class="resume-header-card contact-section">
+        <h2 class="section-title">Contact Form</h2>
+        <form
+          action="mailto:osailer13@gmail.com"
+          method="POST"
+          enctype="text/plain"
+          class="contact-form"
+        >
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
 
-    <!-- Contact Form -->
-    <section class="form-panel">
-      <h2 class="section-title" style="text-align:center;">Contact Form</h2>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
 
-      <form
-        action="mailto:osailer13@gmail.com"
-        method="POST"
-        enctype="text/plain"
-        class="contact-form"
-      >
-        <label for="name">Name</label>
-        <input id="name" name="name" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
+          <button type="submit" class="resume-btn btn">Send</button>
+        </form>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+        <p class="direct-email">
+          Or email me directly:
+          <a href="mailto:osailer13@gmail.com">osailer13@gmail.com</a>
+        </p>
+      </section>
 
-        <button class="project-btn">Send</button>
-      </form>
+      <!-- Social Links Section -->
+      <section class="resume-header-card">
+        <h2 class="section-title">More Links</h2>
 
-      <p style="text-align:center; margin-top:1rem;">
-        Or email me directly:
-        <a href="mailto:osailer13@gmail.com">osailer13@gmail.com</a>
-      </p>
-      
-    </section>
-
-    <!-- Social Links -->
-    <section class="resume-downloads" style="text-align:center;">
-
-      <div class="social-links">
         <a
           href="https://github.com/osailer"
           target="_blank"
@@ -79,7 +74,6 @@
         >
           GitHub
         </a>
-
         <a
           href="https://www.linkedin.com/in/owen-sailer-720321298/"
           target="_blank"
@@ -88,15 +82,12 @@
         >
           LinkedIn
         </a>
-      </div>
-    </section>
+      </section>
+    </main>
 
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p>&copy; 2025 Owen Sailer</p>
-  </footer>
-
-</body>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Owen Sailer</p>
+    </footer>
+  </body>
 </html>

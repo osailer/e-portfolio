@@ -1,60 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Resume — Owen Sailer</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <script src="assets/scripts.js" defer></script>
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <img src="assets/images/dog.jpeg" alt="Owen Sailer — profile photo" class="profile-img" />
-      <div class="headline">
-        <h1>Resume</h1>
-        <p class="sub">Education • Experience • Technical Skills</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume — Owen Sailer</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <img
+          src="assets/images/dog.jpeg"
+          alt="Owen Sailer profile photo"
+          class="profile-img"
+        />
+        <div class="headline">
+          <h1>Resume</h1>
+          <p class="sub">Education • Experience • Technical Skills</p>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="resume.html" class="nav-link active">Resume</a>
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resume.html" class="nav-link active">Resume</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
 
-  <main class="container resume-container">
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Top Card -->
+      <section class="resume-header-card">
+        <h2 class="section-title">My Resume</h2>
+        <p>
+          View or download my complete resume in PDF or Microsoft Word format.
+        </p>
+      </section>
 
-    <!-- Resume Top Card -->
-    <section class="resume-header-card">
-      <h2>My Resume</h2>
-      <p>Below you can view or download my complete resume in PDF or Microsoft Word format.</p>
-    </section>
+      <!-- PDF Preview -->
+      <section class="resume-header-card">
+        <div class="resume-frame">
+          <object data="assets/files/Owen Resume.pdf" type="application/pdf">
+            <p>
+              Your browser does not support inline PDFs.
+              <a href="assets/files/Owen Resume.pdf" download
+                >Download the PDF</a
+              >.
+            </p>
+          </object>
+        </div>
+      </section>
 
-    <!-- PDF Preview -->
-    <section class="resume-viewer-section">
-      <div class="resume-frame">
-        <object data="assets/files/Owen Resume.pdf" type="application/pdf">
-          <p>Your browser does not support inline PDFs. 
-          <a href="assets/files/Owen Resume.pdf" download>Download the PDF</a>.</p>
-        </object>
-      </div>
-    </section>
+      <!-- Download Buttons -->
+      <section
+        class="resume-downloads"
+        style="text-align: center; margin-top: 1.5rem"
+      >
+        <a href="assets/files/Owen Resume.pdf" class="resume-btn btn" download
+          >Download PDF</a
+        >
+        <a
+          href="assets/files/Resume for Owen Sailer E portfolio.docx"
+          class="resume-btn btn"
+          >Download DOCX</a
+        >
+      </section>
+    </main>
 
-    <!-- Download Buttons -->
-    <section class="resume-downloads">
-      <a href="assets/files/Owen Resume.pdf" class="btn resume-btn" download>Download PDF</a>
-      <a href="assets/files/Resume for Owen Sailer E portfolio.docx" class="btn resume-btn">Download DOCX</a>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Owen Sailer</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Owen Sailer</p>
+    </footer>
+  </body>
 </html>

@@ -1,55 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adoption Center — Project | Owen Sailer</title>
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adoption Center — Project | Owen Sailer</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <img src="assets/images/dog.jpeg" alt="Profile photo" class="profile-img" />
-      <div class="headline">
-        <h1>Adoption Center Webpage</h1>
-        <p class="sub">Web system for managing adoptable animals</p>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <img
+          src="assets/images/dog.jpeg"
+          alt="Owen Sailer profile photo"
+          class="profile-img"
+        />
+        <div class="headline">
+          <h1>Adoption Center Webpage</h1>
+          <p class="sub">Web system for managing adoptable animals</p>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="site-nav">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="resume.html" class="nav-link">Resume</a>
-    <a href="projects.html" class="nav-link active">Projects</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
 
-  <main class="container project-page">
+    <!-- Main Content -->
+    <main class="container project-page">
+      <section class="resume-header-card">
+        <h2 class="section-title">About This Project</h2>
 
-    <section class="project-detail-card">
-      <img src="assets/images/adoptioncenter.png" alt="Adoption Center Screenshot" class="project-image" />
+        <p>
+          For <strong>CSCI Modern Software Development</strong>, I worked with
+          <strong>Gage Koskovich</strong> to build a full-featured adoption
+          website for animal shelters. The site supports multiple user roles
+          including admin, staff, and public users. Shelters can list animals
+          for adoption, manage records, and interact with users securely.
+        </p>
 
-      <h2 class="section-title">About This Project</h2>
-      <p>
-        This class project involved developing a full-featured adoption website for
-        animal shelters. It includes different user roles (admin, staff, and public),
-        a complete animal listing system, and a backend powered by **Microsoft SQL Server**.
-      </p>
+        <p>
+          I focused on implementing role-based authentication and creating a
+          backend using
+          <strong>Microsoft SQL Server</strong>. This project gave us hands-on
+          experience integrating a Microsoft SQL database with a web
+          application, while keeping it user-friendly and efficient.
+        </p>
 
-      <p>
-        I implemented authentication levels, user interface layouts, and database
-        architecture to support real-world adoption workflows.
-      </p>
+        <img
+          src="assets/images/AdoptionCenter.png"
+          alt="Adoption Center Screenshot"
+          class="project-image"
+        />
+        <img
+          src="assets/images/AdoptionCenterDetails.png"
+          alt="Adoption Center Details Screenshot"
+          class="project-image"
+        />
 
-      <a href="projects.html" class="project-btn">← Back to Projects</a>
-    </section>
+        <!-- Back & GitHub Buttons -->
+        <div
+          class="project-btn-wrapper"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+          "
+        >
+          <a href="projects.html" class="btn resume-btn">← Back to Projects</a>
+          <a
+            href="https://github.com/osailer/AdoptionCenter"
+            target="_blank"
+            class="btn resume-btn"
+            >View on GitHub →</a
+          >
+        </div>
+      </section>
+    </main>
 
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Owen Sailer</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Owen Sailer</p>
+    </footer>
+  </body>
 </html>
